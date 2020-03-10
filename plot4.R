@@ -39,7 +39,7 @@ with(hpc, plot(datetime, Sub_metering_1, ylab="Energy sub metering", xlab="", ty
 with(hpc, lines(datetime, Sub_metering_1))
 with(hpc, lines(datetime, Sub_metering_2, col="red"))
 with(hpc, lines(datetime, Sub_metering_3, col="blue"))
-legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), box.lwd = 0, inset=0.005)
+legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
 
 #line plot Voltage over time
 with(hpc, plot(datetime, Voltage, type='l'))
