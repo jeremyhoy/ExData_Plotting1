@@ -21,6 +21,9 @@ library(lubridate)
 householdPowerConsumption$Date <- dmy(householdPowerConsumption$Date)
 householdPowerConsumption$Time <- hms(householdPowerConsumption$Time)
 
+#subset data set to the dates we're interested in
+hpc <- subset(householdPowerConsumption, Date=='2007-02-01'|Date=='2007-02-02')
+
 #Plot histogram to display device
 #hist(hpc$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
 
