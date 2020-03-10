@@ -22,7 +22,7 @@ householdPowerConsumption$Date <- dmy(householdPowerConsumption$Date)
 householdPowerConsumption$Time <- hms(householdPowerConsumption$Time)
 
 #Plot histogram to display device
-hist(hpc$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
+#hist(hpc$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")
 
 #Plot histogram to png file device
 png("plot1.png")
